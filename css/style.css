@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    background-color: #0d0d0d;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffee00;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header .quote {
+    font-style: italic;
+    margin-top: 10px;
+    color: #ffee00;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #ffee00;
+}
+
+.overview, .roadmap, .dex-tools, .dedust-swap {
+    margin-bottom: 40px;
+}
+
+.roadmap ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.roadmap li {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    color: #e0e0e0;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffee00;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer a {
+    color: #ffee00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Neon Effect */
+header h1, main h2, footer p {
+    color:  #ffee00 !important;
+    text-shadow: 0 0 5px #ffee00, 0 0 10px #ffee00;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main h2 {
+        font-size: 1.2em;
+    }
+
+    .roadmap li {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 768px) {
+    header, main, footer {
+        padding: 40px;
+    }
+
+    .roadmap li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
